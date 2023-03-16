@@ -1,11 +1,7 @@
 import { Flex, Button } from "@chakra-ui/react";
-import useServiceWorker from "../Hooks/useServiceWorker";
-// import usePushManager from "../Hooks/usePushManager";
 
 type Props = {}
 const NotificationForm = (props: Props) => {
-    useServiceWorker();
-    // usePushManager();
 
     const onSendNotification = () => {
         //request permission for push using notification push api
